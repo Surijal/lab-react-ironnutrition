@@ -32,6 +32,9 @@ class Foods extends React.Component {
 
         const filterfood = (search) => {this.state.foods.filter( el => el.name.toLowerCase().includes(search.toLowerCase()) > - 1)} 
 
+        console.log('HELLO FILTERFOOD', {filterfood});
+        
+
         this.setState({filter: filterfood})
     }
 
